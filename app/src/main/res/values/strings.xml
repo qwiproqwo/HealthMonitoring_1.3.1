@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HealthApp</string>
+    <string name="input_name">Введите ФИО пациента:</string>
+    <string name="input_age">Введите возраст пациента:</string>
+    <string name="save">Сохранить</string>
+    <string name="pressure">Давление</string>
+    <string name="health">Здоровье</string>
+    <string name="highpressure">Верхнее давление:</string>
+    <string name="lowpressure">Нижнее давление:</string>
+    <string name="pulse">Пульс:</string>
+    <string name="tachycardia">Есть тахикардия:</string>
+    <string name="date">Дата замера:</string>
+    <string name="weigh">Вес:</string>
+    <string name="steps">Количество шагов:</string>
+    <string name="header_main">Комплексная система мониторинга здоровья Мищенко В.В.</string>
+    <string name="header_pressure">ДАВЛЕНИЕ</string>
+    <string name="header_health">ЗДОРОВЬЕ</string>
+    <string name="saved">Сохранено !</string>
+</resources>

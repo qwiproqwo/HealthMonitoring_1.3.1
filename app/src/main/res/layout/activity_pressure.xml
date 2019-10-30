@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PressureActivity">
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="172dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDate" />
+
+    <ImageView
+        android:id="@+id/imageRedCross3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/highPressure"
+        app:layout_constraintEnd_toStartOf="@+id/textHeaderPressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/redcross_foreground" />
+
+    <TextView
+        android:id="@+id/textHeaderPressure"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="551dp"
+        android:fontFamily="arial"
+        android:text="@string/header_pressure"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageRedCross3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/highPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/highpressure"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editPressureHigh"
+        app:layout_constraintStart_toStartOf="@+id/editPressureHigh"
+        app:layout_constraintTop_toBottomOf="@+id/imageRedCross3"
+        tools:text="@string/highpressure" />
+
+    <EditText
+        android:id="@+id/editPressureHigh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/lowPressure"
+        app:layout_constraintEnd_toEndOf="@+id/textHeaderPressure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/highPressure" />
+
+    <TextView
+        android:id="@+id/lowPressure"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/lowpressure"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editPressureLow"
+        app:layout_constraintEnd_toEndOf="@+id/editPressureLow"
+        app:layout_constraintStart_toStartOf="@+id/editPressureLow"
+        app:layout_constraintTop_toBottomOf="@+id/editPressureHigh" />
+
+    <EditText
+        android:id="@+id/editPressureLow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/textPulse"
+        app:layout_constraintEnd_toEndOf="@+id/editPressureHigh"
+        app:layout_constraintStart_toStartOf="@+id/editPulse"
+        app:layout_constraintTop_toBottomOf="@+id/lowPressure" />
+
+    <EditText
+        android:id="@+id/editPulse"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textTachycardia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPulse" />
+
+    <TextView
+        android:id="@+id/textPulse"
+        android:layout_width="207dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:text="@string/pulse"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editPulse"
+        app:layout_constraintStart_toStartOf="@+id/editPulse"
+        app:layout_constraintTop_toBottomOf="@+id/editPressureLow" />
+
+    <TextView
+        android:id="@+id/textTachycardia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tachycardia"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTachycardia"
+        app:layout_constraintStart_toStartOf="@+id/editTachycardia"
+        app:layout_constraintTop_toBottomOf="@+id/editPulse" />
+
+    <EditText
+        android:id="@+id/editTachycardia"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTachycardia" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editDate"
+        app:layout_constraintStart_toStartOf="@+id/editDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTachycardia" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="215dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="65dp"
+        android:text="@string/save"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/testOutput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textHeaderPressure" />
+
+    <TextView
+        android:id="@+id/testOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="31dp"
+        android:fontFamily="arial"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSave"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
